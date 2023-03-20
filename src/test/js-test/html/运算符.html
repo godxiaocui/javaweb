@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  /**
+   * == 会先进行类型转换在比较
+   * === 先进行类型判断，在进行比较
+   */
+  var age1=20;
+  var age2="20";
+  alert(age1==age2);
+  alert(age1===age2);
+  /**
+   * 类型转换为number
+   * 1. string 将字符串的字面值转为数字，字符串不是数字转为nan
+   *
+   */
+  var abc =+"20";
+  abc=parseInt(abc);
+  alert(abc)
+  var str="";
+  if(str){
+    alert("转换true")
+  }
+  else{
+    alert("转换false")
+  }
+</script>
+</html>
